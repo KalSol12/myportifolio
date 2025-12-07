@@ -1,0 +1,132 @@
+/* General */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background: #f4f7f8;
+    color: #333;
+}
+
+/* Container */
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header{
+    background: #fff;
+    padding: 15px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    position: sticky;
+    top:0;
+    z-index: 100;
+}
+
+header .logo{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #00bcd4;
+    display: inline-block;
+}
+
+header nav{
+    float: right;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #333;
+    margin-left: 25px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+header nav a:hover{
+    color: #00bcd4;
+}
+
+/* Home Section */
+.home{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background: linear-gradient(to right, #00bcd4, #0097a7);
+    color: #fff;
+    padding: 0 20px;
+}
+
+.home .profile{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    margin-bottom: 20px;
+}
+
+.home h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.home h1 span{
+    color: #ffe600;
+}
+
+.home p{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Social Links */
+.social-links a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 22px;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.social-links a:hover{
+    color: #ffe600;
+}
+
+/* Footer */
+footer{
+    background: #222;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    header nav{
+        float:none;
+        margin-top:10px;
+    }
+
+    header nav a{
+        margin-left: 15px;
+        font-size: 14px;
+    }
+
+    .home h1{
+        font-size:28px;
+    }
+
+    .home p{
+        font-size:16px;
+    }
+}
+a

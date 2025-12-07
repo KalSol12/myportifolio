@@ -1,0 +1,113 @@
+/* General reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Section styling */
+.projects{
+    padding: 60px 40px;
+    background: #f4f7f8;
+    text-align: center;
+}
+/* Headings */
+.projects h2, .project-card h3{
+    font-family: 'Montserrat', sans-serif;
+}
+.project-card h3{
+    font-weight: 700;
+    font-size: 22px;
+}
+.projects h2{
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #222;
+    letter-spacing: 1px;
+}
+
+/* Projects Grid */
+.project-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+/* Project Card Styling */
+.project-card{
+    background: #fff;
+    padding: 30px 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: all 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.project-card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Project Titles */
+.project-card h3{
+    color: #00bcd4;
+    font-size: 22px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Project Descriptions */
+/* Project Descriptions */
+.project-card p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15.5px;
+    line-height: 1.75;
+    color: #444;
+    text-align: justify;
+    margin-bottom: 22px;
+}
+
+.project-card p:hover{
+    color: #00bcd4;               /* subtle hover effect on paragraph */
+}
+
+
+/* Buttons */
+.btn{
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background: linear-gradient(45deg, #00bcd4, #0097a7);
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+
+.btn:hover{
+    background: linear-gradient(45deg, #0097a7, #00bcd4);
+    transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px){
+    .project-card{
+        padding: 25px 20px;
+    }
+    .project-card p{
+        font-size: 15px;
+    }
+    .projects h2{
+        font-size: 28px;
+    }
+}
