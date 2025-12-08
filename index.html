@@ -26,24 +26,63 @@
                 <a href="aboutme.html">About</a>
                 <a href="project.html">Projects</a>
                 <a href="contact.html">Contact</a>
+                 <a href="skill.html">Skill</a>
             </nav>
         </div>
     </header>
 
     <!-- Home Section -->
-    <section id="home" class="home">
-        <div class="home-content">
-            <img src="images/photo_2025-10-15_23-58-56.jpg" class="profile" alt="Profile Photo">
-            <h1>Hello, I'm <span>Kaleab Tenkir</span></h1>
-            <p>Software Engineer | Frontend & Backend Developer</p>
+   <section id="home" class="hero">
+    <div class="hero-container">
 
+        <!-- Left Text Section -->
+        <div class="hero-text">
+            <h1>
+                Building Web Apps,<br> Digital Products &<br>
+                Exceptional <span>Experiences.</span>
+            </h1>
+
+            <p class="intro">
+                I'm <b>Kaleab Tenkir</b>, a Software Engineer passionate about building modern,
+                scalable applications using <b>ASP.NET Core, JavaScript, and Flutter</b>.
+            </p>
+
+            <!-- Dynamic Typing -->
+            <p class="typing"></p>
+            <script>
+                const texts = ["Software Engineer", "ASP.NET Core Developer", "Flutter Developer", "Full-Stack Developer"];
+                let index = 0;
+
+                function typingEffect() {
+                    document.querySelector(".typing").textContent = texts[index];
+                    index = (index + 1) % texts.length;
+                }
+                typingEffect();
+                setInterval(typingEffect, 2000);
+            </script>
+
+            <!-- Buttons -->
+            <div class="hero-btns">
+                <a href="assets/kaleab_Temkir_fita.pdf" target="_blank" download class="btn primary">Download CV</a>
+                <a href="https://github.com/KalSol12/" target="_blank" class="btn outline">View GitHub</a>
+            </div>
+
+            <!-- Social Icons -->
             <div class="social-links">
                 <a href="https://github.com/KalSol12/" target="_blank"><i class="fab fa-github"></i></a>
                 <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
                 <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
             </div>
         </div>
-    </section>
+
+        <!-- Right Image Section -->
+        <div class="hero-img">
+            <img src="images/photo_2025-10-15_23-58-56.jpg" alt="Kaleab Tenkir">
+        </div>
+    </div>
+</section>
+
+
 
     <!-- Footer -->
     <footer>

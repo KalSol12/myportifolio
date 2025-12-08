@@ -1,6 +1,8 @@
 .contact{
     padding: 80px 20px;
-    background: #f4f7f8;
+    /* background: #f4f7f8; */
+    background: radial-gradient(circle at top, rgba(255,255,255,0.1), rgba(0,0,0,1)), #0c031b;
+    padding: 100px 0;
     text-align: center;
 }
 
@@ -19,7 +21,7 @@
 .contact p{
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    color: #555;
+    color: #fffcfc;
     margin-bottom: 30px;
 }
 
@@ -33,7 +35,10 @@
 }
 
 .contact-item{
-    background: #fff;
+    /* background: #fff;
+     */
+     background: radial-gradient(circle at top, rgba(255,255,255,0.1), rgba(0,0,0,1)), #0c031b;
+    padding: 100px 0;
     padding: 20px 25px;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -50,7 +55,7 @@
 }
 
 .contact-item a{
-    color: #333;
+    color: #00bcd4;
     text-decoration: none;
     font-weight: 500;
 }
@@ -75,7 +80,10 @@
     border-radius: 8px;
     border: 1px solid #ccc;
     font-family: 'Roboto', sans-serif;
-    font-size: 14px;
+    font-size: 20px;
+    color: #fff;
+     background: radial-gradient(circle at top, rgba(255,255,255,0.1), rgba(0,0,0,1)), #0c031b;
+   
 }
 
 .contact-form button{

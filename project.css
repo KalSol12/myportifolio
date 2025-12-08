@@ -10,12 +10,15 @@
 /* Section styling */
 .projects{
     padding: 60px 40px;
-    background: #f4f7f8;
+    /* background: #f4f7f8; */
+    background: radial-gradient(circle at top, rgba(255,255,255,0.1), rgba(0,0,0,1)), #0c031b;
+    padding: 100px 0;
     text-align: center;
 }
 /* Headings */
 .projects h2, .project-card h3{
     font-family: 'Montserrat', sans-serif;
+    
 }
 .project-card h3{
     font-weight: 700;
@@ -24,7 +27,7 @@
 .projects h2{
     font-size: 36px;
     margin-bottom: 40px;
-    color: #222;
+    color: #f9f6f6;
     letter-spacing: 1px;
 }
 
@@ -37,7 +40,10 @@
 
 /* Project Card Styling */
 .project-card{
-    background: #fff;
+    /* background: #fff;
+     */
+     background: radial-gradient(circle at top, rgba(255,255,255,0.1), rgba(0,0,0,1)), #0c031b;
+    padding: 100px 0;
     padding: 30px 25px;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);

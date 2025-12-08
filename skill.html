@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="skill.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h2 class="logo">Kaleab Tenkir</h2>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="aboutme.html">About</a>
+                <a href="project.html">Projects</a>
+                <a href="contact.html">Contact</a>
+                <a href="skill.html">Skill</a>
+            </nav>
+        </div>
+    </header>
+
+
+    <section id="skills" class="skills-section">
+    <h2 class="section-title">My Skills</h2>
+
+    <div class="skills-container">
+
+        <div class="skills-column">
+            <div class="skill">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="icon">
+                <div class="dots html"></div>
+            </div>
+
+            <div class="skill">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="icon">
+                <div class="dots css"></div>
+            </div>
+
+            <div class="skill">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="icon">
+                <div class="dots js"></div>
+            </div>
+
+            <div class="skill">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="icon">
+                <div class="dots react"></div>
+            </div>
+
+        
+
+        </div>
+
+        <div class="skills-column">
+
+            <div class="skill">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="icon">
+                <div class="dots python"></div>
+            </div>
+
+            <div class="skill">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" class="icon">
+                <div class="dots node"></div>
+            </div>
+
+            <div class="skill">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" class="icon">
+                <div class="dots django"></div>
+            </div>
+
+            <div class="skill">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" class="icon">
+                <div class="dots flutter"></div>
+            </div>
+                  <div class="skill">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg" class="icon">
+    <div class="dots asp"></div>
+</div>
+        </div>
+    </div>
+</section>
+
+    
+</body>
+<script>
+const levels = {
+    html: 14,
+    css: 12,
+    js: 13,
+    react: 11,
+    python: 10,
+    node: 5,
+    django: 5,
+      flutter: 12,
+     asp: 10
+  
+   
+};
+
+const colors = {
+    html: "#ff6a00",
+    css: "#0091ff",
+    js: "#ffe600",
+    react: "#00d8ff",
+    python: "#4b8bbe",
+    node: "#3c873a",
+    django: "#0c4b33",
+    flutter: "#44d1fd",
+    asp: "#3c873a"
+};
+
+for (let skill in levels) {
+    const container = document.querySelector(`.${skill}`);
+    for (let i = 0; i < levels[skill]; i++) {
+        const dot = document.createElement("span");
+        dot.style.background = colors[skill];
+        container.appendChild(dot);
+    }
+}
+</script>
+
+</html>

@@ -7,12 +7,13 @@
 }
 
 body{
-    background: #f4f7f8;
+    /* background: #f4f7f8; */
     color: #333;
 }
 
 /* Container */
 .container{
+    
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
@@ -54,7 +55,7 @@ header nav a:hover{
 
 /* Home Section */
 .home{
-    min-height: 100vh;
+    min-height: 85vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -129,4 +130,125 @@ footer{
         font-size:16px;
     }
 }
-a
+
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    padding: 80px 10%;
+    min-height: 90vh;
+    /* background: #fdfdfd; */
+     background: radial-gradient(circle at top, rgba(255,255,255,0.1), rgba(0,0,0,1)),
+                #0c031b; 
+}
+.hero::before{
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 350px;
+    height: 350px;
+    background: radial-gradient(circle, rgba(255,0,200,0.4), transparent 70%);
+    filter: blur(90px);
+    opacity: 0.6;
+}
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 40px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.hero-text h1 span {
+    color: #6a5cff;
+}
+
+.intro {
+    font-size: 25px;
+    margin-top: 12px;
+    color: #444;
+}
+
+.typing {
+    font-size: 50px;
+    font-weight: bold;
+    color: #6a5cff;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* Buttons */
+.hero-btns {
+    margin-top: 25px;
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    padding: 12px 22px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.primary {
+    background: #6a5cff;
+    color: white;
+}
+
+.outline {
+    border: 2px solid #6a5cff;
+    color: #6a5cff;
+}
+
+.hero-img img {
+    width: 350px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Social Icons */
+.social-links {
+    margin-top: 25px;
+}
+
+.social-links a {
+    font-size: 22px;
+    margin-right: 12px;
+    color: #6a5cff;
+    transition: .3s;
+}
+
+.social-links a:hover {
+    color: black;
+}
