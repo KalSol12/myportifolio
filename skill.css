@@ -50,6 +50,17 @@
     margin-right: 15px;
 }
 
+.skill-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.skill-info span {
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
 /* Dots Style */
 
 .dots {
@@ -73,6 +84,15 @@
     border-radius: 50%;
     display: inline-block;
     animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 5px #00bcd4;
+    }
+    to {
+        box-shadow: 0 0 20px #00bcd4, 0 0 30px #00bcd4;
+    }
 }
 
 

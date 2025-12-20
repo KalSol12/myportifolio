@@ -69,12 +69,11 @@
 }
 
 /* Project Descriptions */
-/* Project Descriptions */
 .project-card p{
     font-family: 'Roboto', sans-serif;
     font-size: 15.5px;
     line-height: 1.75;
-    color: #444;
+    color: #d6d2d2;
     text-align: justify;
     margin-bottom: 22px;
 }
