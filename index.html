@@ -22,13 +22,18 @@
     <header>
         <div class="container">
             <h2 class="logo">Kaleab Tenkir</h2>
-            <nav>
+            <nav id="nav-menu">
                 <a href="index.html">Home</a>
                 <a href="aboutme.html">About</a>
                 <a href="project.html">Projects</a>
                 <a href="contact.html">Contact</a>
                  <a href="skill.html">Skills</a>
             </nav>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
     </header>
 
@@ -50,17 +55,6 @@
 
             <!-- Dynamic Typing -->
             <p class="typing"></p>
-            <script>
-                const texts = ["Software Engineer", "ASP.NET Core Developer", "Flutter Developer", "Full-Stack Developer"];
-                let index = 0;
-
-                function typingEffect() {
-                    document.querySelector(".typing").textContent = texts[index];
-                    index = (index + 1) % texts.length;
-                }
-                typingEffect();
-                setInterval(typingEffect, 2000);
-            </script>
 
             <!-- Buttons -->
             <div class="hero-btns">
@@ -92,5 +86,27 @@
           
         </div>
     </footer>
+
+    <script>
+        // Hamburger menu toggle
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+
+        // Dynamic Typing
+        const texts = ["Software Engineer", "ASP.NET Core Developer", "Flutter Developer", "Full-Stack Developer"];
+        let index = 0;
+
+        function typingEffect() {
+            document.querySelector(".typing").textContent = texts[index];
+            index = (index + 1) % texts.length;
+        }
+        typingEffect();
+        setInterval(typingEffect, 2000);
+    </script>
 </body>
 </html>
